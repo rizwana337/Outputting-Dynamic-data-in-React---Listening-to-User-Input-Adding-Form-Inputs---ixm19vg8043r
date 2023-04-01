@@ -8,17 +8,17 @@ const App = () => {
     setName(e.target.value);
   };
 
-  const onInputClick = () => {
-    document.getElementById("text").innerHTML = `Hello my name is ${name} and I study at Newton School`;
+  const onButtonClick = () => {
+    document.getElementById("text").textContent = `Hello my name is ${name} and I study at Newton School`;
   };
 
   return (
     <div id="main">
       <input id="input" onChange={onInputChange}></input>
-      <button id="button" onClick={onInputClick}>
+      <button id="button" onClick={onButtonClick}>
         Click
       </button>
-      <p id="text">Hello my name is {name} and I study at Newton School</p>
+      <p id="text"> </p>
     </div>
   );
 };
